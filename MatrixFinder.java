@@ -48,7 +48,6 @@ public class MatrixFinder{
 			   { 11, 18, 19, 46, 59 }
 	};
 
-<<<<<<< HEAD
 	System.out.println("testA Results:");
 	for (int[] r : testA){
 	    for (int item : r){
@@ -67,6 +66,7 @@ public class MatrixFinder{
 	}
 
 	System.out.println("================================");
+	System.out.println("testB Results:");
 	for (int[] r : testB){
 	    for (int item : r){
 		
@@ -79,19 +79,9 @@ public class MatrixFinder{
 		double timeFinal = System.currentTimeMillis();
 		System.out.println("Total Time: " + (timeFinal - timeInit));
 		double timeTotal = (timeFinal - timeInit)/100000;
-		System.out.println("Time for One Search: " + timeTotal);
+		System.out.println("Time for One Search: " + timeTotal + "\n");
 	    }
 	}
-=======
-	double timeInit = System.currentTimeMillis();
-	
-	for(int n = 0; n < 10000; n++){
-	    alg( testB, 9);
-	}
-
-	double timeFinal = System.currentTImeMillis();
-	System.out.println(timeFinal - timeInit):
->>>>>>> c538f3759be6ee17016bbe5f44de229e7a389d8f
 
 	/*System.out.println(alg( testB, 15)); // (0, 4)
 	System.out.println(alg( testB, 0));  // (0, 0)
