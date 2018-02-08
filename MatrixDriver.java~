@@ -1,0 +1,70 @@
+public class MatrixDriver {
+
+public static void main( String[] args ) {
+	/*
+	int var = 0;
+	int[][] testA = new int[10000][10000];
+	for (int i = 0; i < testA.length; i++)
+	    for (int x = 0; x < testA.length; x++) {
+		testA[i][x] = var;
+		var++;
+	    }
+
+	for (int i = 0; i < 10; i++) {
+	    System.out.println("testA Results:");
+	    double timeInit = System.currentTimeMillis();
+		
+	    for(int n = 0; n < 10; n++){
+		alg( testA, testA[0][testA.length - 1]);
+	    }
+		
+	    double timeFinal = System.currentTimeMillis();
+	    System.out.println("Total Time: " + (timeFinal - timeInit));
+	    double timeTotal = (timeFinal - timeInit)/10;
+	    System.out.println("Time for One Search: " + timeTotal + "\n");
+	}
+	*/
+	
+        int var = 0;
+	int[][] testB = new int[20000][20000];
+	for (int i = 0; i < testB.length; i++)
+	    for (int x = 0; x < testB.length; x++) {
+		testB[i][x] = var;
+		var++;
+	    }
+
+	for (int i = 0; i < 10; i++) {
+	    System.out.println("testB Results:");
+	    double timeInit = System.currentTimeMillis();
+		
+	    for(int n = 0; n < 10; n++){
+		alg( testB, testB[0][testB.length - 1]);
+	    }
+		
+	    double timeFinal = System.currentTimeMillis();
+	    System.out.println("Total Time: " + (timeFinal - timeInit));
+	    double timeTotal = (timeFinal - timeInit)/10;
+	    System.out.println("Time for One Search: " + timeTotal + "\n");
+	}
+	/*
+	  System.out.println("================================");
+	  System.out.println("testB Results:");
+	  for (int[] r : testB){
+	  for (int item : r){
+		
+	  double timeInit = System.currentTimeMillis();
+		
+	  for(int n = 0; n < 100000; n++){
+	  alg( testB, item);
+	  }
+		
+	  double timeFinal = System.currentTimeMillis();
+	  System.out.println("Total Time: " + (timeFinal - timeInit));
+	  double timeTotal = (timeFinal - timeInit)/100000;
+	  System.out.println("Time for One Search: " + timeTotal + "\n");
+	  }
+	  }
+	*/
+    }//end main
+
+}

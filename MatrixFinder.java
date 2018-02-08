@@ -14,6 +14,10 @@
   Repeat that step until the element equals x.
 */
 
+/*Noticed
+- OutOfMemoryError: Java heap space
+ */
+
 public class MatrixFinder{
 	
     public static String alg(int[][] matrix, int n){
@@ -33,64 +37,5 @@ public class MatrixFinder{
 	return "(" + -1 + ", " + -1 + ")";
     }
     
-    public static void main( String[] args ) {
-    	int[][] testA = { { 1 , 3 , 5 } ,
-			  { 7 , 9 , 11 } ,
-			  { 13 , 15 , 17 }
-	};
-	/*System.out.println(alg( testA, 0 )); //should return (-1, -1)
-	  System.out.println(alg( testA, 3 )); // (0, 1)*/
-      
-	int[][]  testB = { { 0, 4, 7, 11, 15} ,
-			   { 2, 5, 8, 12, 19 } ,
-			   { 3, 6, 9, 16 , 22 } ,
-			   { 10, 17, 18, 42, 56 },
-			   { 11, 18, 19, 46, 59 }
-	};
-
-	System.out.println("testA Results:");
-	for (int[] r : testA){
-	    for (int item : r){
-		
-		double timeInit = System.currentTimeMillis();
-		
-		for(int n = 0; n < 100000; n++){
-		    alg( testB, item);
-		}
-		
-		double timeFinal = System.currentTimeMillis();
-		System.out.println("Total Time: " + (timeFinal - timeInit));
-		double timeTotal = (timeFinal - timeInit)/100000;
-		System.out.println("Time for One Search: " + timeTotal + "\n");
-	    }
-	}
-
-	System.out.println("================================");
-	System.out.println("testB Results:");
-	for (int[] r : testB){
-	    for (int item : r){
-		
-		double timeInit = System.currentTimeMillis();
-		
-		for(int n = 0; n < 100000; n++){
-		    alg( testB, item);
-		}
-		
-		double timeFinal = System.currentTimeMillis();
-		System.out.println("Total Time: " + (timeFinal - timeInit));
-		double timeTotal = (timeFinal - timeInit)/100000;
-		System.out.println("Time for One Search: " + timeTotal + "\n");
-	    }
-	}
-
-	/*System.out.println(alg( testB, 15)); // (0, 4)
-	System.out.println(alg( testB, 0));  // (0, 0)
-	System.out.println(alg( testB, 56)); // (3, 4)
-	System.out.println(alg( testB, 15)); // (0, 4)
-	System.out.println(alg( testB, 22)); // (2, 4)
-	System.out.println(alg( testB, 16)); // (2, 3)
-	System.out.println(alg( testB, 47)); // (-1, -1)*/
-
-    }//end main
 }//end class
 		    
