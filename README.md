@@ -16,3 +16,4 @@ We already have a search algorithm that we coded from a previous assignment and 
 
 
 ## Conclusions
+The results from our experiment show that our search algorithm is in fact an O(n^2). The huge amount of time that occurs at the beginning of the graph could be atrributed to the system allocating memory for the 2D arrays. 
