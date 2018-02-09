@@ -1,8 +1,3 @@
-//Team Shampooing et Conditionneur (Cheryl Qian, Stefan Tan, Lynne Wang)
-//APCS2 pd1
-//HW03 -- I Am Still Searching
-//2018-02-01
-
 /*
   Starts at the element at the bottom left and compare it to the number that is 
   being searched for, x.
