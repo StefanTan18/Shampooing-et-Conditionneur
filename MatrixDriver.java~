@@ -2,6 +2,7 @@ public class MatrixDriver {
 
     public static void main( String[] args ) {
 	for (int a = 1000; a < 10000; a+=100) {
+	    System.out.println(a + " by " + a);
 	    int var = 0;
 	    int[][] testA = new int[a][a];
 	    for (int i = 0; i < testA.length; i++)
@@ -10,17 +11,19 @@ public class MatrixDriver {
 		    var++;
 		}
 
-	    for (int i = 0; i < 20; i++) {
-	        long timeInit = System.nanoTime();
+	    for (int i = 0; i < 10; i++) {
+		System.out.println("testA Results:");
+		double timeInit = System.currentTimeMillis();
 		
-	        MatrixFinder.alg( testA, testA[0][testA.length - 1] );
+		for(int n = 0; n < 10; n++){
+		    MatrixFinder.alg( testA, testA[0][testA.length - 1]);
+		}
 		
-	        long timeFinal = System.nanoTime();
-		long timeOne = (timeFinal - timeInit)/20;
-		
-		System.out.print(a + "," + timeOne + "\n");
+		double timeFinal = System.currentTimeMillis();
+		System.out.println("Total Time: " + (timeFinal - timeInit));
+		double timeTotal = (timeFinal - timeInit)/10;
+		System.out.println("Time for One Search: " + timeTotal + "\n");
 	    }
-	    System.out.print("======================================\n");
 	}
 	
 	/*
