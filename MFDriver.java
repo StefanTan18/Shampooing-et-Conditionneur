@@ -19,12 +19,10 @@ public class MFDriver {
 	        long timeFinal = System.nanoTime();
 		long timeOne = (timeFinal - timeInit);
 		sum += timeOne;
-		//System.out.print(a + "," + timeOne + "\n");
-
 	    }
 	    System.out.print(a + "," + (sum / 20.) + "\n");
 	}
 	
     }//end main
 
-}
+}//end class
