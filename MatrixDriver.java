@@ -3,6 +3,7 @@ public class MatrixDriver {
     public static void main( String[] args ) {
 	for (int a = 1000; a < 10000; a+=100) {
 	    int var = 0;
+	    long sum = 0;
 	    int[][] testA = new int[a][a];
 	    for (int i = 0; i < testA.length; i++)
 		for (int x = 0; x < testA.length; x++) {
@@ -17,10 +18,10 @@ public class MatrixDriver {
 		
 	        long timeFinal = System.nanoTime();
 		long timeOne = (timeFinal - timeInit)/20;
-		
-		System.out.print(a + "," + timeOne + "\n");
+		sum += timeOne;
+		//System.out.print(a + "," + timeOne + "\n");
 	    }
-	    System.out.print("======================================\n");
+	    System.out.print(a + "," + (sum / 20.) + "\n");
 	}
 	
 	/*
