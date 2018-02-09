@@ -1,7 +1,7 @@
-Team Shampooing et Conditionneur (Cheryl Qian, Stefan Tan, Lynne Wang)
-APCS2 pd1
-L00 -- But What Does the Data Say?
-2018-02-08
+##### Team Shampooing et Conditionneur (Cheryl Qian, Stefan Tan, Lynne Wang)
+##### APCS2 pd1
+##### L00 -- But What Does the Data Say?
+##### 2018-02-08
 
 ## Hypothesis
 For an n x n 2D array of ints, the worst-case execution of our search algorithm is O(n).
